@@ -1,6 +1,9 @@
 # turtlebot_PID
 
 ```
+sudo apt-get install ros-kinetic-turtlebot*
+
+
 roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/kulbir/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo/worlds/empty.world  
 
 catkin_make -DCATKIN_WHITELIST_PACKAGES="turtlebot_pid"  
