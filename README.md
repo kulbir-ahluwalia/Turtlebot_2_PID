@@ -23,18 +23,22 @@ cd catkin_ws
 source devel/setup.bash #just in case
 
 roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/kulbir/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo/worlds/empty.world  
+```
 
 In a separate terminal:-
 ```
-cd catkin_ws
-source devel/setup.bash #just in case
-roslaunch turtlebot_pid gotogoal.launch
+cd catkin_ws  
+source devel/setup.bash #just in case  
+roslaunch turtlebot_pid gotogoal.launch  
+```
 
-
-
+If you make any changes to the python file, then do catkin_make or:-
+```
 catkin_make -DCATKIN_WHITELIST_PACKAGES="turtlebot_pid"
-
+```
+To see the info:-
+```
 rostopic pub /mobile_base/commands/reset_odometry std_gs/Empty
-
+```
 
 
