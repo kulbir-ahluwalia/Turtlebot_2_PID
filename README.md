@@ -32,12 +32,9 @@ roslaunch turtlebot_pid gotogoal.launch
 
 
 
-catkin_make -DCATKIN_WHITELIST_PACKAGES="turtlebot_pid"  
+catkin_make -DCATKIN_WHITELIST_PACKAGES="turtlebot_pid"
 
-rostopic pub /mobile_base/commands/reset_odometry std_gs/Empty  
-
-roslaunch turtlebot_pid gotogoal.launch
-
+rostopic pub /mobile_base/commands/reset_odometry std_gs/Empty
 
 
 
