@@ -39,6 +39,11 @@ To launch the file to make the turtlebot go to a particular position:-
 roslaunch turtlebot_pid gotogoal.launch  
 ```
 
+To launch the file to make the turtlebot go to a particular angle:-
+```
+roslaunch turtlebot_pid gotoangle.launch  
+```
+
 If you make any changes to the python file, then do catkin_make or:-
 ```
 catkin_make -DCATKIN_WHITELIST_PACKAGES="turtlebot_pid"
