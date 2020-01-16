@@ -30,7 +30,11 @@ In a separate terminal:-
 cd catkin_ws  
 source devel/setup.bash #just in case 
 ```
-Use source devel/setup.zsh if you are using the Z shell.
+Use the following command to source the setup file if you're using Z shell:- 
+```
+source devel/setup.zsh
+```
+To launch the file to make the turtlebot go to a particular position:-
 ```
 roslaunch turtlebot_pid gotogoal.launch  
 ```
