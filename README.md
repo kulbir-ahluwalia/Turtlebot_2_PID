@@ -28,7 +28,10 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/kulbir/catki
 In a separate terminal:-
 ```
 cd catkin_ws  
-source devel/setup.bash #just in case  
+source devel/setup.bash #just in case 
+```
+Use source devel/setup.zsh if you are using the Z shell.
+```
 roslaunch turtlebot_pid gotogoal.launch  
 ```
 
