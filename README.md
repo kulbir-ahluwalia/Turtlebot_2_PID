@@ -1,4 +1,19 @@
 # Turtlebot_PID
+The aim of this project is to control the Turtlebot using PID. The user inputs the goal location and the turtlebot goes there using a PID controller.
+
+---
+
+## Moving the Turtlebot
+We can move the turtlebot by:-
+1. Publishing to the concerned topics
+2. Using teleop.launch which takes inputs from the user using the keyboard.
+
+### By publishing to the topic /cmd_vel
+1. To control the velocity of the robot, we publish to the topic **/cmd_vel**. 
+2. Use the command **rostopic info /cmd_vel** to see the type of message required to be sent to the topic, the publishers to the topic and the subscribers to the topic.
+3. Use **rosmsg show geometry_msgs/Twist** to see the details of the message type.
+
+
 
 To install Turtlebot 2:-
 ```
@@ -52,5 +67,7 @@ To see the info:-
 ```
 rostopic pub /mobile_base/commands/reset_odometry std_gs/Empty
 ```
-
+## References:-
+1. https://github.com/Zhanghq8/Turtlebot_PID_Controller (This uses Turtlebot2)
+2. Robot Ignite Academy: Mastering with ROS: Turtlebot3
 
