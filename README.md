@@ -12,7 +12,17 @@ We can move the turtlebot by:-
 1. To control the velocity of the robot, we publish to the topic **/cmd_vel**. 
 2. Use the command **rostopic info /cmd_vel_mux/input/teleop** to see the type of message required to be sent to the topic, the publishers to the topic and the subscribers to the topic.
 3. Use **rosmsg show geometry_msgs/Twist** to see the details of the message type.
-
+4. Then use the command to enter the velocities manually:-
+```
+rostopic pub /cmd_vel_mux/input/teleop geometry_msgs/Twist "linear:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.0"
+```
 
 
 To install Turtlebot 2:-
