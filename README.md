@@ -57,5 +57,4 @@ rostopic pub /mobile_base/commands/reset_odometry std_gs/Empty
 ```
 ## References:-
 1. https://github.com/Zhanghq8/Turtlebot_PID_Controller (This uses Turtlebot2)
-2. Robot Ignite Academy: Mastering with ROS: Turtlebot3
 
