@@ -1,29 +1,7 @@
-# Turtlebot_PID
+# Turtlebot2_PID
 The aim of this project is to control the Turtlebot2 using PID. The user inputs the goal location and the turtlebot goes there using a PID controller.
 
 ---
-
-## Moving the Turtlebot
-We can move the turtlebot by:-
-1. Publishing to the concerned topics
-2. Using teleop.launch which takes inputs from the user using the keyboard.
-
-### By publishing to the topic /cmd_vel
-1. To control the velocity of the robot, we publish to the topic **/cmd_vel**. 
-2. Use the command **rostopic info /cmd_vel_mux/input/teleop** to see the type of message required to be sent to the topic, the publishers to the topic and the subscribers to the topic.
-3. Use **rosmsg show geometry_msgs/Twist** to see the details of the message type.
-4. Then use the command to enter the velocities manually:-
-```
-rostopic pub /cmd_vel_mux/input/teleop geometry_msgs/Twist "linear:
-  x: 0.0
-  y: 0.0
-  z: 0.0
-angular:
-  x: 0.0
-  y: 0.0
-  z: 0.0"
-```
-
 
 To install Turtlebot 2:-
 ```
