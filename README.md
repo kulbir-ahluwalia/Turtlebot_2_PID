@@ -1,4 +1,4 @@
-# Turtlebot2_PID
+# Turtlebot_2_PID
 The aim of this project is to control the Turtlebot2 using PID. The user inputs the goal location and the turtlebot goes there using a PID controller.
 
 ---
